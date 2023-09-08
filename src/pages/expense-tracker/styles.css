@@ -1,0 +1,224 @@
+/* Expense Tracker Container */
+.expense-tracker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #87CEEB, #ADD8E6);
+}
+
+/* Expense Tracker Title */
+.expense-tracker h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Current User */
+.expense-tracker h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Balance Section */
+.balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.balance h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.balance h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Summary Section */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Income and Expenses Sections */
+.income,
+.expenses {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.income h4,
+.expenses h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.income p,
+.expenses p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Add Transaction Form */
+.add-transaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.add-transaction input[type="text"],
+.add-transaction input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-transaction input[type="radio"] {
+    -webkit-appearance: none;
+    /* Remove the default radio button style */
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #2196F3;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.add-transaction input[type="radio"]:checked {
+    background-color: #2196F3;
+}
+
+.add-transaction label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.add-transaction button {
+    cursor: pointer;
+    padding: 12px 24px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2196F3;
+    color: #ffffff;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.add-transaction button:hover {
+    background-color: #1976D2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sign-out-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFA07A;
+    color: #ffffff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.sign-out-button:hover {
+    background-color: #E64A19;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Transactions Section */
+.transactions {
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.transactions h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+/* Transaction Table */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.transaction-table th {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* Transaction Type Label Colors */
+.transactions label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.transactions label[style*="red"] {
+    color: red;
+}
+
+.transactions label[style*="green"] {
+    color: green;
+}
